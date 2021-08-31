@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>Guardian tabs challenge</title>
 
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/core.css" rel="stylesheet">
-    <link href="css/tabs.css" rel="stylesheet">
-    <link href="css/latest.css" rel="stylesheet">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/core.css" rel="stylesheet">
+    <link href="/css/tabs.css" rel="stylesheet">
+    <link href="/css/latest.css" rel="stylesheet">
+
+    <script type="module" src="/js/main.js"></script>
   </head>
 
   <body>
@@ -30,7 +32,7 @@
             </a>
           </li>
         </ul>
-        <section class="tabs_panel" id="tab-panel-1" role="tabpanel" aria-labelledby="tab-1">
+        <section class="tabs_panel" id="tab-panel-1" role="tabpanel" aria-labelledby="tab-1" tabindex="-1">
           <ol class="latest">
             <li class="latest_article">
               <a class="latest_headline" href="#">UK furlough scheme must stay for Covid-hit industries, warn unions and firms</a>
@@ -46,8 +48,8 @@
             </li>
           </ol>
         </section>
-        <section class="tabs_panel" id="tab-panel-2" role="tabpanel" aria-labelledby="tab-2" hidden></section>
-        <section class="tabs_panel" id="tab-panel-3" role="tabpanel" aria-labelledby="tab-3" hidden></section>
+        <section class="tabs_panel" id="tab-panel-2" role="tabpanel" aria-labelledby="tab-2" tabindex="-1" hidden></section>
+        <section class="tabs_panel" id="tab-panel-3" role="tabpanel" aria-labelledby="tab-3" tabindex="-1" hidden></section>
       </div>
     </div>
   </body>
