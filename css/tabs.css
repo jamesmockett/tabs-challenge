@@ -1,0 +1,43 @@
+/* ==========================================================================
+   # TABBED PANEL
+   ========================================================================== */
+
+.tabs {
+  border: 1px solid var(--colour-highlight);
+}
+
+.tabs_tablist {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs_tab {
+  display: flex;
+  flex: 1;
+}
+
+.tabs_link {
+  flex: 1;
+  padding: var(--space-half) var(--space);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  color: var(--colour-text);
+  background-color: var(--colour-highlight);
+}
+
+.tabs_link:hover,
+.tabs_link:focus {
+  background-color: var(--colour-highlight-lighter);
+}
+
+.tabs_link--selected {
+  background-color: var(--colour-background);
+}
+
+.tabs_panel {
+  padding: var(--space);
+}

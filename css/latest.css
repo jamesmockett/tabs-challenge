@@ -1,0 +1,47 @@
+/* ==========================================================================
+   # LATEST ARTICLES
+   ========================================================================== */
+
+.latest {
+  counter-reset: latest-counter;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: var(--space);
+}
+
+.latest_article {
+  position: relative;
+  counter-increment: latest-counter;
+  padding-left: var(--space-triple);
+}
+
+.latest_article::before {
+  position: absolute;
+  content: counter(latest-counter);
+  left: 0;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.latest_article + .latest_article {
+  margin-top: var(--space-half);
+  padding-top: var(--space-half);
+  border-top: 1px solid var(--colour-highlight);
+}
+
+.latest_headline {
+  text-decoration: none;
+  color: var(--colour-text);
+}
+
+.latest_headline:hover,
+.latest_headline:focus {
+  color: var(--colour-text-lighter);
+}
+
+.latest_trail {
+  margin-top: var(--space-quarter);
+  margin-bottom: 0;
+  color: var(--colour-text-lighter);
+}

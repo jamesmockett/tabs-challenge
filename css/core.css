@@ -1,0 +1,40 @@
+/* ==========================================================================
+   # CORE STYLES
+   ========================================================================== */
+
+:root {
+  --colour-text:              #121212;
+  --colour-text-lighter:      #767676;
+  --colour-highlight:         #eee;
+  --colour-highlight-lighter: #f6f6f6;
+  --colour-background:        #fff;
+  --space-triple:             3rem;
+  --space-double:             2rem;
+  --space:                    1rem;
+  --space-half:               0.5rem;
+  --space-quarter:            0.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  background-color: var(--colour-background);
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--colour-text);
+}
+
+.content {
+  max-width: 40rem;
+  padding: var(--space);
+  margin: 0 auto;
+}
