@@ -1,4 +1,4 @@
 export const CONFIG = {
-  apiKey: '1d35ae17-74bb-4cde-9ccc-0f7d5bbcd969',
+  apiKey: '## ADD API KEY ##',
   apiEndpoint: 'http://content.guardianapis.com/search'
 };
