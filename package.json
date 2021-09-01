@@ -4,12 +4,17 @@
   "description": "Client side tabs challenge",
   "main": "main.js",
   "scripts": {
-    "start": "http-server"
+    "start": "http-server",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
+  "type": "module",
   "author": "James Mockett",
   "license": "ISC",
   "dependencies": {
     "http-server": "^13.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^27.1.0",
+    "jest-fetch-mock": "^3.0.3"
+  }
 }
