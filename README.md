@@ -49,4 +49,4 @@ Due to lack of time I didn't get far with adding test coverage. I also backed my
 
 I've broken down the UI into separate tab and article list components, along with some core styles. I'm using BEM to aid maintainability and reuse.
 
-Similarly the JS has been broken down into separate modules for dealing with the content API and the tabs UI. The content API module is _very_ barebones, but could potentially be reused elsewhere. One outstanding issue with the tabs code is that it assumes there is only a single instance of the component on a page. In it's current incarnation it would not support multiple instanced.
+Similarly the JS has been broken down into separate modules for dealing with the content API and the tabs UI. The content API module is _very_ barebones, but could potentially be reused elsewhere. One outstanding issue with the tabs code is that it assumes there is only a single instance of the component on a page. In its current incarnation it would not support multiple instances.
